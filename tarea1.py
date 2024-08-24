@@ -10,5 +10,6 @@ word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ").uppe
 if word in meme_dict.keys():
     print(meme_dict[word])
     
-else:("Esta palabra no esta en el diccionario")
+else:
+    print("Esta palabra no esta en el diccionario")
    
