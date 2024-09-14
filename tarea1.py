@@ -27,4 +27,12 @@ async def joined(ctx, member: discord.Member):
     """Says when a member joined."""
     await ctx.send(f'{member.name} se unió {discord.utils.format_dt(member.joined_at)}')
 
+@bot.command()
+async def ayuda(ctx):
+    await ctx.send(f""" Mis comandos son:
+**&hola**
+**&risa**
+**&adios**
+**&joined** """)
+
 bot.run("TOKEN")
