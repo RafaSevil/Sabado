@@ -27,9 +27,4 @@ async def joined(ctx, member: discord.Member):
     """Says when a member joined."""
     await ctx.send(f'{member.name} se unió {discord.utils.format_dt(member.joined_at)}')
 
-from bot_logic import gen_pass
-
-password = gen_pass(10)
-print("Tu nueva contraseña es:", password)
-
 bot.run("TOKEN")
